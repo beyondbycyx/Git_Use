@@ -1,2 +1,2 @@
 # Git_Use
-<a href="www.baidu.com"> 百度</a>
+<a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E4%BA%A4%E4%BA%92%E5%BC%8F%E6%9A%82%E5%AD%98"> git 交互式使用‘add 和 commit’</a> </br>
