@@ -3,8 +3,9 @@
 
 - 添加于撤销
 
-
+``` java
   #添加所有
   git add --all
   #撤销所有
   git reset HEAD * ; git checkout -- <file>
+```
