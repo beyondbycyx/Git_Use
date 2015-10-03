@@ -4,9 +4,10 @@
 	
 
 	$ git status
+	
 - 时刻清楚你各个区间(版本，分支)的不同，变化
 
-
+```java
 	# work 与 stage 的不同 
 	$ git diff 
 
@@ -21,22 +22,23 @@
 	$ git diff da985 b325c
 	# 某个分支(dev) 与 当前 work的不同
 	$ git diff dev
+```
 
 - 时刻清楚你提交过的版本
 
-
+```java
 	# 查看最近2次的提交版本，最上面的是最新的
 	$ git log -2 --pretty=oneline
 	# gitk图像化界面仅可查看当前分支的路线，或者合并后的路线
 	$ gitk 
-
+```
 ## 常见的命令提示 ##
 - 工作目录下面的所有文件都不外乎这两种状态：已跟踪或未跟踪
  * Untracked(未被跟踪的)：从来没有add过，commit过的
  * tracked(已跟踪)：只要add过的就是
  * 未跟踪过的即从来没要add过的(没有加入到git的版本控制中):
 
-
+```java
 	$ git status
 	Untracked files:
 	  (use "git add <file>..." to include in what will be committed)
@@ -44,16 +46,18 @@
 	        a.txt
 	
 	nothing added to commit but untracked files present (use "git add" to track)
+ ```
  
 -  benchmarks.rb 文件 add后的状态(说明work 和 stage 的一样，但是与repository不一样)
    需要从work 区间 提交到 repository
 
-
+```java
 	$ git status
 	On branch master	
 	Changes to be committed:
 	(use "git reset HEAD <file>..." to unstage)
 	modified: benchmarks.rb
+```
 
 -  benchmarks.rb 文件 add后又修改后的状态(说明work 的与stage 不同，stage与repository不同)
    1. 可以从stage 提交(commit)到 repository 去，但是只是将stage上文件的内容copy到了repository去   
