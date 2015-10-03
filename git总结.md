@@ -63,7 +63,7 @@
    1. 可以从stage 提交(commit)到 repository 去，但是只是将stage上文件的内容copy到了repository去   
    2. 可以从work 添加(add)到 stage 再提交(commit)到 repository去。是将work上的文件内容copy到了repository去
 
-
+```java
 	$ git status
 	On branch master
 	Changes to be committed:
@@ -73,6 +73,8 @@
 	(use "git add <file>..." to update what will be committed)
 	(use "git checkout -- <file>..." to discard changes in working directory)
 	modified: benchmarks.rb
+```
+	
 ## git 中常用的概念 ##
 
 - 可参考progit.zh.pdf 的“git分支”章节
@@ -109,12 +111,14 @@
 	$ rm <file> //仅删除工作区的
 	$ git checkout -- <file> //从版本库中恢复
 
+
 - 彻底删除文件(从工作区和暂存区一起进行)
     
 
 	$ git rm 不行的话可用"git rm -f test.txt"进行强制删除
 	$ git rm test.txt
 	$ git commit -m "remove test.txt"
+
 
 - 删除文件(仅在暂存区[stage]进行，即本地[work]还存在的)
 
