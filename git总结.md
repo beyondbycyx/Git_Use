@@ -108,36 +108,37 @@
 - 删除文件(仅工作区上进行）
 
 
-	$ rm <file> //仅删除工作区的
-	$ git checkout -- <file> //从版本库中恢复
+		$ rm <file> //仅删除工作区的
+		$ git checkout -- <file> //从版本库中恢复
 
 
 - 彻底删除文件(从工作区和暂存区一起进行)
     
 
-	$ git rm 不行的话可用"git rm -f test.txt"进行强制删除
-	$ git rm test.txt
-	$ git commit -m "remove test.txt"
+		$ git rm 不行的话可用"git rm -f test.txt"进行强制删除
+		$ git rm test.txt
+		$ git commit -m "remove test.txt"
 
 
 - 删除文件(仅在暂存区[stage]进行，即本地[work]还存在的)
 
 
-	$ git rm --cached test.txt
-	$ git commit -m "remove test.txt"
+		$ git rm --cached test.txt
+		$ git commit -m "remove test.txt"
 
 
 - 撤销修改
 
-
+```java
 	           add(git status)             commit(git status)
 	work(工作区)-------------->stage(暂存区)------------------------>master(版本库)---------------->服务器
 	           git checkout -- <file>      git reset HEAD <file>//只要还没上传服务器，该命令还生效即还可撤销修改
+```
 
 - 移动文件或修改文件名
 
 
-	$ git mv [file-original] [file-renamed]
+		$ git mv [file-original] [file-renamed]
 
 - 具体的撤销自己的操作，请用"git help < command>"查看文档 
 
@@ -161,14 +162,14 @@
 - 常用的命令
 
 
-	#新建分支并转移到该分支
-	$git checkout -b dev
-	#转移到某个分支
-	$git checkout master
-	#当前分支合并dev分支
-	$git merge dev
-	#查看分支命令
-	$git help branch
+		#新建分支并转移到该分支
+		$git checkout -b dev
+		#转移到某个分支
+		$git checkout master
+		#当前分支合并dev分支
+		$git merge dev
+		#查看分支命令
+		$git help branch
 
 ## 自己创建“.gitignore”文件与使用 ##
 - **.gitingore文件内容：**
