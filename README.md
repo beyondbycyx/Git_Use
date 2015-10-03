@@ -14,7 +14,7 @@
 - 时刻清楚你的3个区间的状态:work(工作区间),stage/index(暂存区间),local repository(联网时remote repository).
 	
 
-	$ git status
+		$ git status
 	
 - 时刻清楚你各个区间(版本，分支)的不同，变化
 
